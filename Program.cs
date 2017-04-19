@@ -3,7 +3,7 @@ using Windows.ApplicationModel;
 
 namespace CentennialStartupHelper
 {
-    internal class Program
+    internal static class Program
     {
         private static int Main(string[] CommandLine)
         {
@@ -44,7 +44,7 @@ namespace CentennialStartupHelper
             }
         }
 
-        private static int ToInt(StartupTaskState state)
+        private static int ToInt(this StartupTaskState state)
         {
             switch (state)
             {
